@@ -12,6 +12,14 @@
       "supportsTablet": true
     },
     "android": {
+      "package": "com.saas360.myapp",
+      "useNextNotificationApi": true,
+      "googleServicesFile": "./google-services.json",
+      "config": {
+        "googleSignIn": {
+          "api_key": "AIzaSyAN1J7pypjOJ036f0ZkEWgZ8yuiQEp0AN0"
+        }
+      },
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/images/android-icon-foreground.png",
@@ -38,11 +46,18 @@
             "backgroundColor": "#000000"
           }
         }
-      ]
+      ],
+      "expo-notifications"
     ],
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "4a4da328-82ac-4314-a486-39157ed6b059"
+      }
     }
   }
 }
